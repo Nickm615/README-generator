@@ -32,7 +32,7 @@ const questions = [
     {
         type:'list',
         message:'What license would you like your project to be used under?',
-        choices:['MIT','Apache 2.0','BSD-3-Clause','BSD-2-Clause','GPL','LGPL','MPL-2.0','CDDL-1.0','EPL-2.0'],
+        choices:['MIT','Apache 2.0','BSD-3-Clause','BSD-2-Clause','GPL','LGPL','MPL-2.0','EPL-2.0'],
         name:'license'
     }
 
@@ -54,6 +54,7 @@ function init() {
         fs.writeFile('generatedREADME.md', markDownContent, (err)=>{
             err ? console.log(err) : console.log('Successfully created README.md!')
         })
+
 })}
 
 
