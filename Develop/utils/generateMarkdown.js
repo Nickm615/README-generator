@@ -34,7 +34,7 @@ function renderLicenseBadge(license) {
     case 'EPL-2.0':
       return `[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`
       break;
-      
+
     default: ''
       break;
   }
@@ -94,7 +94,8 @@ ${response.credits}
 
 ##License
 
-${response.license}
+This project is licensed under ${response.license}
+You can find out more about this license by clicking this badge: ${licenseBadge}
 `;
 }
 
